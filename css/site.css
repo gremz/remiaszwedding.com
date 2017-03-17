@@ -116,10 +116,10 @@ a.pure-button-primary {
 .home-menu {
     padding: 0.5em;
     text-align: center;
-    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    /*box-shadow: 0 1px 1px rgba(0,0,0, 0.10);*/
 }
 .home-menu {
-    background: #2d3e50;
+    background: transparent;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -129,7 +129,7 @@ a.pure-button-primary {
 }
 
 .home-menu .pure-menu-heading {
-    color: white;
+    color: #FFD700;
     font-weight: 400;
     font-size: 120%;
 }
@@ -285,6 +285,10 @@ a.pure-button-primary {
     /*width: 66.667%;*/
     margin-left: auto;
     margin-right: auto;
+}
+
+.details-text {
+    margin-bottom: 50px;
 }
 
 .accomidations-middle {
