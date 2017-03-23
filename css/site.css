@@ -52,6 +52,16 @@ h2 {
     height: auto;
 }
 
+.flaticon {
+    margin: 0;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.story-container {
+    margin: 20px 0;
+}
+
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need
@@ -184,6 +194,7 @@ a.pure-button-primary {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 300px;
 }
 
 .image-container {
@@ -308,6 +319,14 @@ a.pure-button-primary {
     width: 100%;
 }
 
+.our-story .content-head {
+    padding-bottom: .7em;
+}
+
+.our-story span {
+    font-family: 'Roboto';
+}
+
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
@@ -352,10 +371,18 @@ a.pure-button-primary {
         border: none;
     }
 
+    .flaticon {
+        font-size: 60px;
+    }
+
     .image-container {
         background: url('../img/3.jpg') center top no-repeat;
         background-size: cover;
-        /*background-position: 0 -50px;*/
+        background-position: 0 -50px;
+    }
+
+    .image-text {
+        width: auto;
     }
 
     .l-box-lrg {
@@ -364,6 +391,14 @@ a.pure-button-primary {
 
     .alternate {
         width: 66.667%; 
+    }
+
+    .our-story {
+        width: 100%;
+    }
+
+    .story-container {
+        margin: 0;
     }
 
 }
