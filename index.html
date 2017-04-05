@@ -36,15 +36,16 @@
 
 
 
-<div class="header hidden">
+<div class="header">
     <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
         <a class="pure-menu-heading" href="#">Greg + Adi</a>
 
-        <ul class="pure-menu-list hidden">
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">About Us</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">When &amp; Where</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Registry</a></li>
-            <li class="pure-menu-item"><a href="#" class="pure-menu-link"><button type="submit" class="pure-button">RSVP</button></a></li>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a href="#our-story" class="pure-menu-link">Our Story</a></li>
+            <li class="pure-menu-item"><a href="#details" class="pure-menu-link">When &amp; Where</a></li>
+            <li class="pure-menu-item"><a href="#registry" class="pure-menu-link">Registry</a></li>
+            <li class="pure-menu-item"><a href="#accommodations" class="pure-menu-link">Accommodations</a></li>
+            <li class="pure-menu-item hidden"><a href="#" class="pure-menu-link"><button type="submit" class="pure-button">RSVP</button></a></li>
         </ul>
     </div>
 </div>
@@ -119,7 +120,7 @@
         </div>
     </div> -->
 
-    <div class="l-box-lrg pure-g">
+    <div class="l-box-lrg pure-g" id="our-story">
         <div class="pure-u-1 is-center alternate our-story">
             <h1 class="content-head">Our Story</h1>
             <!-- <h2 class="content-subhead">Love at First Sight</h2> -->
@@ -174,29 +175,65 @@
         </div>
     </div>
 
-    <div class="l-box-lrg pure-g">
+    <div class="l-box-lrg pure-g" id="details">
         <div class="pure-u-1 is-center alternate">
             <h1 class="content-head details-text">Wedding Details</h1>
             <p class="details-text"></p>
+            <h2 class="content-subhead">Wedding Shower</h2>
+            <p>
+                11:00a – 3:00p<br />
+                June 11 <br />
+                <span class="alt-title">Crystal Grand Banquets</span><br />
+                12416 S Archer Ave<br />
+                Lemont, IL<br/ >
+                &nbsp;
+            </p>
             <h2 class="content-subhead">Ceremony</h2>
             <p>
                 11:45p – 1:00p<br />
-                Divine Mercy Catholic Church<br />
+                <span class="alt-title">Divine Mercy Catholic Church</span><br />
                 21W411 Sunset Avenue<br />
                 Lombard, IL<br/ >
                 &nbsp;
             </p>
-            <h2 class="content-subhead">Reception</h2>
+            <h2 class="content-subhead">Reception</span></h2>
             <p class="text-align-center">
                 6:00p – 1:00am<br />
-                Chateau Del Mar<br />
+                <span class="alt-title">Chateau Del Mar</span><br />
                 8301 W 95th St<br />
                 Hickory Hills, IL
             </p>
         </div>
     </div>
 
-    <div class="l-box-lrg pure-g" style="background: #f9f9f9;">
+    <div class="image-text-container" id="registry">
+        <div class="image-container registry"></div>
+        <div class="image-text is-center">
+            <h1 class="content-head image-text-head">Registry</h1>
+            <!-- <p>
+                <a href="http://purecss.io" class="pure-button pure-button-primary">RSVP</a>
+            </p> -->
+        </div>
+    </div>
+    <div class="registry-content">
+        <p class="is-center registry-header">Here's a few stores we registered with:</p>
+        <div class="l-box-lrg pure-g">
+            <div class="pure-u-1-2 pure-u-sm-1-4">
+                <a href="#" target="_blank"><img class="pure-img" src="./img/kohls.png" alt="Kohls"></a>
+            </div>
+            <div class="pure-u-1-2 pure-u-sm-1-4">
+                <a href="http://tgt.gifts/gradi" target="_blank"><img class="pure-img" src="./img/target.png" alt="Target"></a>
+            </div>
+            <div class="pure-u-1-2 pure-u-sm-1-4">
+                <a href="https://www.amazon.com/wedding/share/gradi" target="_blank"><img class="pure-img" src="./img/amazon.png" alt="Amazon"></a>
+            </div>
+            <div class="pure-u-1-2 pure-u-sm-1-4">
+                <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=544495014&eventType=Wedding&pwsurl=" target="_blank"><img class="pure-img" src="./img/bed-bath-and-beyond.png" alt="Bed Bath and Beyond"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="l-box-lrg pure-g" style="background: #f9f9f9;" id="accommodations">
         <div class="pure-u-1 is-center alternate">
             <h1 class="content-head">Accommodations</h1>
             <p>
@@ -270,6 +307,27 @@
   ga('create', 'UA-28593663-3', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script type="text/javascript">
+
+(function(e,t){"use strict";typeof define=="function"&&define.amd?define(t):typeof exports=="object"&&typeof module=="object"?module.exports=t():e.smoothScroll=t()})(this,function(){"use strict";if(typeof window!="object")return;if(document.querySelectorAll===void 0||window.pageYOffset===void 0||history.pushState===void 0)return;var e=function(e,t){return e.nodeName==="HTML"?-t:e.getBoundingClientRect().top+t},t=function(e){return e<.5?4*e*e*e:(e-1)*(2*e-2)*(2*e-2)+1},n=function(e,n,r,i){return r>i?n:e+(n-e)*t(r/i)},r=function(t,r,i,s){r=500,s=s||window;var o=s.scrollTop||window.pageYOffset;if(typeof t=="number")var u=parseInt(t);else var u=e(t,o);var a=Date.now(),f=window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||function(e){window.setTimeout(e,15)},l=function(){var e=Date.now()-a;s!==window?s.scrollTop=n(o,u,e,r):window.scroll(0,n(o,u,e,r)),e>r?typeof i=="function"&&i(t):f(l)};l()},i=function(e){e.preventDefault(),location.hash!==this.hash&&window.history.pushState(null,null,this.hash);var t=document.getElementById(this.hash.substring(1));if(!t)return;r(t,500,function(e){location.replace("#"+e.id)})};return document.addEventListener("DOMContentLoaded",function(){var e=document.querySelectorAll('a[href^="#"]:not([href="#"])'),t;for(var n=e.length;t=e[--n];)t.addEventListener("click",i,!1)}),r});
+
+ /*!
+ * headroom.js v0.9.3 - Give your page some headroom. Hide your header until you need it
+ * Copyright (c) 2016 Nick Williams - http://wicky.nillia.ms/headroom.js
+ * License: MIT
+ */
+
+!function(a,b){"use strict";"function"==typeof define&&define.amd?define([],b):"object"==typeof exports?module.exports=b():a.Headroom=b()}(this,function(){"use strict";function a(a){this.callback=a,this.ticking=!1}function b(a){return a&&"undefined"!=typeof window&&(a===window||a.nodeType)}function c(a){if(arguments.length<=0)throw new Error("Missing arguments in extend function");var d,e,f=a||{};for(e=1;e<arguments.length;e++){var g=arguments[e]||{};for(d in g)"object"!=typeof f[d]||b(f[d])?f[d]=f[d]||g[d]:f[d]=c(f[d],g[d])}return f}function d(a){return a===Object(a)?a:{down:a,up:a}}function e(a,b){b=c(b,e.options),this.lastKnownScrollY=0,this.elem=a,this.tolerance=d(b.tolerance),this.classes=b.classes,this.offset=b.offset,this.scroller=b.scroller,this.initialised=!1,this.onPin=b.onPin,this.onUnpin=b.onUnpin,this.onTop=b.onTop,this.onNotTop=b.onNotTop,this.onBottom=b.onBottom,this.onNotBottom=b.onNotBottom}var f={bind:!!function(){}.bind,classList:"classList"in document.documentElement,rAF:!!(window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame)};return window.requestAnimationFrame=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame,a.prototype={constructor:a,update:function(){this.callback&&this.callback(),this.ticking=!1},requestTick:function(){this.ticking||(requestAnimationFrame(this.rafCallback||(this.rafCallback=this.update.bind(this))),this.ticking=!0)},handleEvent:function(){this.requestTick()}},e.prototype={constructor:e,init:function(){return e.cutsTheMustard?(this.debouncer=new a(this.update.bind(this)),this.elem.classList.add(this.classes.initial),setTimeout(this.attachEvent.bind(this),100),this):void 0},destroy:function(){var a=this.classes;this.initialised=!1,this.elem.classList.remove(a.unpinned,a.pinned,a.top,a.notTop,a.initial),this.scroller.removeEventListener("scroll",this.debouncer,!1)},attachEvent:function(){this.initialised||(this.lastKnownScrollY=this.getScrollY(),this.initialised=!0,this.scroller.addEventListener("scroll",this.debouncer,!1),this.debouncer.handleEvent())},unpin:function(){var a=this.elem.classList,b=this.classes;!a.contains(b.pinned)&&a.contains(b.unpinned)||(a.add(b.unpinned),a.remove(b.pinned),this.onUnpin&&this.onUnpin.call(this))},pin:function(){var a=this.elem.classList,b=this.classes;a.contains(b.unpinned)&&(a.remove(b.unpinned),a.add(b.pinned),this.onPin&&this.onPin.call(this))},top:function(){var a=this.elem.classList,b=this.classes;a.contains(b.top)||(a.add(b.top),a.remove(b.notTop),this.onTop&&this.onTop.call(this))},notTop:function(){var a=this.elem.classList,b=this.classes;a.contains(b.notTop)||(a.add(b.notTop),a.remove(b.top),this.onNotTop&&this.onNotTop.call(this))},bottom:function(){var a=this.elem.classList,b=this.classes;a.contains(b.bottom)||(a.add(b.bottom),a.remove(b.notBottom),this.onBottom&&this.onBottom.call(this))},notBottom:function(){var a=this.elem.classList,b=this.classes;a.contains(b.notBottom)||(a.add(b.notBottom),a.remove(b.bottom),this.onNotBottom&&this.onNotBottom.call(this))},getScrollY:function(){return void 0!==this.scroller.pageYOffset?this.scroller.pageYOffset:void 0!==this.scroller.scrollTop?this.scroller.scrollTop:(document.documentElement||document.body.parentNode||document.body).scrollTop},getViewportHeight:function(){return window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight},getElementPhysicalHeight:function(a){return Math.max(a.offsetHeight,a.clientHeight)},getScrollerPhysicalHeight:function(){return this.scroller===window||this.scroller===document.body?this.getViewportHeight():this.getElementPhysicalHeight(this.scroller)},getDocumentHeight:function(){var a=document.body,b=document.documentElement;return Math.max(a.scrollHeight,b.scrollHeight,a.offsetHeight,b.offsetHeight,a.clientHeight,b.clientHeight)},getElementHeight:function(a){return Math.max(a.scrollHeight,a.offsetHeight,a.clientHeight)},getScrollerHeight:function(){return this.scroller===window||this.scroller===document.body?this.getDocumentHeight():this.getElementHeight(this.scroller)},isOutOfBounds:function(a){var b=0>a,c=a+this.getScrollerPhysicalHeight()>this.getScrollerHeight();return b||c},toleranceExceeded:function(a,b){return Math.abs(a-this.lastKnownScrollY)>=this.tolerance[b]},shouldUnpin:function(a,b){var c=a>this.lastKnownScrollY,d=a>=this.offset;return c&&d&&b},shouldPin:function(a,b){var c=a<this.lastKnownScrollY,d=a<=this.offset;return c&&b||d},update:function(){var a=this.getScrollY(),b=a>this.lastKnownScrollY?"down":"up",c=this.toleranceExceeded(a,b);this.isOutOfBounds(a)||(a<=this.offset?this.top():this.notTop(),a+this.getViewportHeight()>=this.getScrollerHeight()?this.bottom():this.notBottom(),this.shouldUnpin(a,c)?this.unpin():this.shouldPin(a,c)&&this.pin(),this.lastKnownScrollY=a)}},e.options={tolerance:{up:0,down:0},offset:0,scroller:window,classes:{pinned:"headroom--pinned",unpinned:"headroom--unpinned",top:"headroom--top",notTop:"headroom--not-top",bottom:"headroom--bottom",notBottom:"headroom--not-bottom",initial:"headroom"}},e.cutsTheMustard="undefined"!=typeof f&&f.rAF&&f.bind&&f.classList,e});
+
+  // grab an element
+  var myElement = document.querySelector(".home-menu"),
+      ourStoryPos = document.querySelector("#our-story");
+  // construct an instance of Headroom, passing the element
+  Headroom.options['offset'] = ourStoryPos.getBoundingClientRect()['top'];
+  var headroom  = new Headroom(myElement);
+  // initialise
+  headroom.init(); 
 </script>
 </body>
 </html>

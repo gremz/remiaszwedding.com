@@ -123,13 +123,31 @@ a.pure-button-primary {
  * I want to customize how my .pure-menu looks at the top of the page
  */
 
+/* Headroom CSS */
+
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+/* end */
+
+
 .home-menu {
     padding: 0.5em;
     text-align: center;
-    /*box-shadow: 0 1px 1px rgba(0,0,0, 0.10);*/
+    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+    overflow-x: scroll;
 }
+
 .home-menu {
-    background: transparent;
+    background: #fff;
 }
 .pure-menu.pure-menu-fixed {
     /* Fixed menus normally have a border at the bottom. */
@@ -139,9 +157,10 @@ a.pure-button-primary {
 }
 
 .home-menu .pure-menu-heading {
-    color: #FFD700;
+    color: #34495e;
     font-weight: 400;
     font-size: 120%;
+    display: none;
 }
 
 .home-menu .pure-menu-selected a {
@@ -149,13 +168,14 @@ a.pure-button-primary {
 }
 
 .home-menu a {
-    color: #6FBEF3;
+    color: #34495e;
+    cursor: pointer;
 }
 .home-menu li a:hover,
 .home-menu li a:focus {
     background: none;
     border: none;
-    color: #AECFE5;
+    color: #7f8c8d;
 }
 
 
@@ -171,7 +191,7 @@ a.pure-button-primary {
     /* The following styles are required for the "scroll-over" effect */
     width: 100%;
     height: 88%;
-    top: 0;
+    top: 48px;
     left: 0;
     position: fixed !important;
 }
@@ -205,6 +225,28 @@ a.pure-button-primary {
     height: 600px;
     opacity: .5;
 }
+
+/* Registry */
+
+.image-container.registry {
+    background: url('../img/_DSC9752.jpg') center top no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.registry-header {
+    padding-top: 2em;
+}
+
+/*.pure-img:hover {
+    box-shadow: inset 0 0 1px #7f8c8d;
+}*/
+
+.registry .pure-img {
+    cursor: pointer;
+}
+
+/* End Registry */
 
 .image-text-head {
     color: #fff;
@@ -298,6 +340,10 @@ a.pure-button-primary {
     margin-right: auto;
 }
 
+.alt-title {
+    font-style: italic;
+}
+
 .details-text {
     margin-bottom: 50px;
 }
@@ -348,10 +394,14 @@ a.pure-button-primary {
             float: right;
         }
 
+    .home-menu .pure-menu-heading {
+        display: inline-block;
+    }
+
     /* We increase the height of the splash-container */
-/*    .splash-container {
-        height: 500px;
-    }*/
+    .splash-container {
+        top: 59px;
+    }
 
     /* We decrease the width of the .splash, since we have more width
     to work with */
