@@ -229,7 +229,7 @@ a.pure-button-primary {
 /* Registry */
 
 .image-container.registry {
-    background: url('../img/_DSC9752.jpg') center top no-repeat;
+    background: url('../img/4.jpg') center top no-repeat;
     background-size: cover;
     height: 300px;
 }
@@ -323,6 +323,7 @@ a.pure-button-primary {
 .content-subhead {
     color: #FFD700;
     text-transform: uppercase;
+    margin-bottom: 0; 
 }
     .content-subhead i {
         margin-right: 7px;
