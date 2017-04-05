@@ -238,6 +238,10 @@ a.pure-button-primary {
     padding-top: 2em;
 }
 
+.registry-container.l-box-lrg {
+    padding-top: 1em;
+}
+
 /*.pure-img:hover {
     box-shadow: inset 0 0 1px #7f8c8d;
 }*/
