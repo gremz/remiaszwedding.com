@@ -60,7 +60,7 @@
             September 23, 2017
         </p>
         <p>
-            <a href="#" class="pure-button" onclick="showRsvp();">RSVP</a>
+            <a class="pure-button" onclick="showRsvp();return false;">RSVP</a>
         </p>
     </div>
 </div>
@@ -266,14 +266,16 @@
     i.marginwidth="0";
     i.className = "rsvp-iframe";
 
-    rsvp.container.style = "display: block;";
+    rsvp.container.style.display = "block";
 
-    document.body.style = "overflow: hidden;";
+    document.body.style.overflow = "hidden";
+    document.body.style.position = "fixed";
   }
 
   function closeRsvp() {
-    rsvp.container.style = "display: none;";
-    document.body.style = "overflow: auto;";
+    rsvp.container.style.display = "none";
+    document.body.style.overflow = "auto";
+    document.body.style.position = "";
   }
 </script>
 </body>
