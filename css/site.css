@@ -99,6 +99,10 @@ h2 {
     margin-bottom: 1em;
 }
 
+.pure-form input[type="radio"] {
+    width: auto;
+}
+
 /*
  * -- PURE BUTTON STYLES --
  * I want my pure-button elements to look a little different
@@ -378,6 +382,28 @@ a.pure-button-primary {
     font-family: 'Roboto';
 }
 
+#rsvp-container {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 48px;
+    z-index: 3;
+    display: none;
+}
+
+#rsvp-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#rsvp-container a {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: rgb(120, 123, 129);
+}
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
@@ -405,7 +431,7 @@ a.pure-button-primary {
 
     /* We increase the height of the splash-container */
     .splash-container {
-        top: 59px;
+        top: 72px;
     }
 
     /* We decrease the width of the .splash, since we have more width
@@ -454,6 +480,10 @@ a.pure-button-primary {
 
     .story-container {
         margin: 0;
+    }
+
+    #rsvp-container {
+        top: 72px;
     }
 
 }

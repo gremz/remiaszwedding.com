@@ -46,7 +46,7 @@
             <li class="pure-menu-item"><a href="#accommodations" class="pure-menu-link">Accommodations</a></li>
             <li class="pure-menu-item"><a href="#registry" class="pure-menu-link">Registry</a></li>
             <li class="pure-menu-item"><a href="#shower" class="pure-menu-link">Shower</a></li>
-            <li class="pure-menu-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLScUY8DHujRC6YBUmDTEYSrIbjux8Np1VcDm3mKbXYwCZP5pMg/viewform" target="_blank" class="pure-menu-link"><button type="submit" class="pure-button">RSVP</button></a></li>
+            <!-- <li class="pure-menu-item"><a href="https://docs.google.com/forms/d/e/1FAIpQLScUY8DHujRC6YBUmDTEYSrIbjux8Np1VcDm3mKbXYwCZP5pMg/viewform" target="_blank" class="pure-menu-link"><button type="submit" class="pure-button">RSVP</button></a></li> -->
         </ul>
     </div>
 </div>
@@ -59,9 +59,9 @@
         <p class="splash-subhead">
             September 23, 2017
         </p>
-        <!-- <p>
-            <a href="http://purecss.io" class="pure-button pure-button-primary">RSVP</a>
-        </p> -->
+        <p>
+            <a href="#" class="pure-button" onclick="showRsvp();">RSVP</a>
+        </p>
     </div>
 </div>
 
@@ -212,6 +212,14 @@
     </div>
 
 </div>
+
+<div id="rsvp-container">
+
+    <a href="#" class="pure-button" onclick="closeRsvp();">x</a>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUY8DHujRC6YBUmDTEYSrIbjux8Np1VcDm3mKbXYwCZP5pMg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+</div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -242,6 +250,31 @@
   var headroom  = new Headroom(myElement);
   // initialise
   headroom.init(); 
+
+  var rsvp = {};
+
+  function showRsvp() {
+    var i = document.createElement('iframe');
+    rsvp.container || (rsvp.container = document.querySelector('#rsvp-container'));
+
+    //<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUY8DHujRC6YBUmDTEYSrIbjux8Np1VcDm3mKbXYwCZP5pMg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    i.src = "https://docs.google.com/forms/d/12zzN907A80_5ZKr6iEuxUlVVJSwKcmSmAMvIIvgs-6E/viewform?embedded=true";
+    i.height = "100%";
+    i.width = "100%";
+    i.frameborder="0";
+    i.marginheight="0";
+    i.marginwidth="0";
+    i.className = "rsvp-iframe";
+
+    rsvp.container.style = "display: block;";
+
+    document.body.style = "overflow: hidden;";
+  }
+
+  function closeRsvp() {
+    rsvp.container.style = "display: none;";
+    document.body.style = "overflow: auto;";
+  }
 </script>
 </body>
 </html>
